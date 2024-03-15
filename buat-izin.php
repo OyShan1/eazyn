@@ -11,8 +11,7 @@
 
 <body>
   <!--  Body Wrapper -->
-  <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
-    data-sidebar-position="fixed" data-header-position="fixed">
+  <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full" data-sidebar-position="fixed" data-header-position="fixed">
     <!-- Sidebar Start -->
     <aside class="left-sidebar">
       <!-- Sidebar scroll-->
@@ -41,7 +40,7 @@
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href= "buat-izin.php" aria-expanded="false">
+              <a class="sidebar-link" href="buat-izin.php" aria-expanded="false">
                 <span>
                   <i class="ti ti-article"></i>
                 </span>
@@ -106,8 +105,7 @@
             <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-end">
               <a href="https://adminmart.com/product/modernize-free-bootstrap-admin-dashboard/" target="_blank" class="btn btn-primary">Download Free</a>
               <li class="nav-item dropdown">
-                <a class="nav-link nav-icon-hover" href="javascript:void(0)" id="drop2" data-bs-toggle="dropdown"
-                  aria-expanded="false">
+                <a class="nav-link nav-icon-hover" href="javascript:void(0)" id="drop2" data-bs-toggle="dropdown" aria-expanded="false">
                   <img src="assets/images/profile/user-1.jpg" alt="" width="35" height="35" class="rounded-circle">
                 </a>
                 <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop2">
@@ -142,54 +140,54 @@
                 <form>
                   <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Pilih Guru</label>
-                      <select class="form-select" aria-label="Default select example" name="guru_id">
-                        <option value="1">Eka Nur</option>
-                        <option value="2">Diyono</option>
-                        <option value="3">Budiana</option>
-                        <option value="4">Subarna</option>
-                        <option value="5">Sumartina</option>
-                        <option value="5">Catarina Setyawati Marsiana</option>
-                      </select>
-                    </div>
-                    <div class="mb-3">
-                      <label for="exampleInputPassword1" class="form-label">Mulai Jam</label>
-                      <select class="form-select" aria-label="Default select example" name="mulai jam">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                      </select>
-                    </div>
-                    <div class="mb-3">
-                      <label for="exampleInputPassword1" class="form-label">Sampai</label>
-                      <select class="form-select" aria-label="Default select example" name="mulai_jam">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                      </select>
-                    </div>
-                    <div class="mb-3">
-                      <label for="exampleInputPassword1" class="form-label" name="file_pendukung">File Pendukung</label>
-                      <input class="form-control" type="file" id="formFile">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Buat Izin</button>
+                    <select class="form-select" aria-label="Default select example" name="guru_id">
+                      <option value="1">Eka Nur</option>
+                      <option value="2">Diyono</option>
+                      <option value="3">Budiana</option>
+                      <option value="4">Subarna</option>
+                      <option value="5">Sumartina</option>
+                      <option value="5">Catarina Setyawati Marsiana</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Mulai Jam</label>
+                    <select class="form-select" aria-label="Default select example" name="mulai jam">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                      <option value="12">12</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Sampai</label>
+                    <select class="form-select" aria-label="Default select example" name="mulai_jam">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                      <option value="12">12</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label" name="file_pendukung">File Pendukung</label>
+                    <input class="form-control" type="file" id="formFile">
+                  </div>
+                  <button type="submit" class="btn btn-primary">Buat Izin</button>
                 </form>
               </div>
             </div>
