@@ -1,16 +1,19 @@
 <?php
-include '../config/connect.php';
+session_start();
+include 'connect.php';
 
 $username = $_POST['username'];
 $password = $_POST['password'];
 
-$query = "SELECT * FROM siswa WHERE username='$username'";
-$result = mysqli_query($is_connect,$query);
+$query = mysqli_query($is_connect, "SELECT * FROM siswa WHERE username='$username' ");         
 
-if (mysqli_num_rows($result) > 0) {
-    session_start();
+$data = mysqli_fetch_assoc($query);
+
+if(NULL != $data) {
+    $_SESSION['id'] =$data['id'];
     $_SESSION['username'] = $username;
-    header('location: ../index.php');
+
+    header('Location: ../index.php');
 } else {
     echo 'login GAGAL!'; 
 }

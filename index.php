@@ -1,3 +1,10 @@
+<?php
+session_start(); // ketika mulai session harus ada sintak ini dulu
+if (!isset($_SESSION['id'])) {
+  header('location: ./login.php');
+}
+?>
+
 <!-- //1. 
 //2. Membuat $query
 //3. Menjalankan
@@ -9,7 +16,7 @@ $query = "select izin.*, guru.nama as nama_guru, bk.nama as nama_bk
           from izin 
           inner join guru on guru.id = izin.guru_id 
           inner join bk on bk.id = izin.bk_id
-          where izin.siswa_id = 2";
+          where izin.siswa_id = " . $_SESSION['id'];
 
 $run_sql = mysqli_query($is_connect,$query);
 // var_dump($sql);
@@ -141,7 +148,7 @@ $run_sql = mysqli_query($is_connect,$query);
                       <i class="ti ti-list-check fs-6"></i>
                       <p class="mb-0 fs-3">My Task</p>
                     </a>
-                    <a href="./login.php" class="btn btn-outline-primary mx-3 mt-2 d-block">Logout  </a>
+                    <a href="./config/logout.php" class="btn btn-outline-primary mx-3 mt-2 d-block">Logout</a>
                   </div>
                 </div>
               </li>
@@ -281,7 +288,7 @@ $run_sql = mysqli_query($is_connect,$query);
           </div>
         </div>
         <div class="py-6 px-6 text-center">
-          <p class="mb-0 fs-4">Design and Developed by <a href="https://adminmart.com/" target="_blank" class="pe-1 text-primary text-decoration-underline">AdminMart.com</a></p>
+          <p class="mb-0 fs-4">Design and Developed by <a href="https://adminmart.com/" target="_blank" class="pe-1 text-primary text-decoration-underline">SIJA B</a></p>
         </div>
       </div>
     </div>
